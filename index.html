@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gurukrupa Realcon</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+  </style>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            greenTheme: "#355F57",
+            gold: "#E5C27A"
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Font (similar luxury feel) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.propstory.com/assets/css/common.css">
+  <link rel="stylesheet" href="https://cdn.propstory.com/assets/vendor/intlTelInput/css/intlTelInput.css">
+
+  <!-- Google Tag Manager -->
+  <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WC24DZ');
+  </script>
+
+  <!-- Google Ads (gtag.js) -->
+  <script src="https://www.googletagmanager.com/gtag/js?id=AW-812624000"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-812624000');
+  </script>
+
+</head>
+
+<body class="font-sans">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="fixed top-0 w-full z-50 bg-greenTheme h-[100px]">
+
+    <div class="flex items-center justify-between md:justify-start px-6 md:px-[80px] h-full gap-10 lg:gap-20">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <img src="" desktop="./images/logo7.svg" mobile="./images/mobile-logo98.svg"
+          class="responsive-img h-[84px] w-[149px] object-contain" alt="logo">
+        <div class="text-white text-xs leading-tight">
+
+        </div>
+      </div>
+
+      <!-- Hamburger Button (Mobile Only) -->
+      <button id="mobileMenuBtn" class="md:hidden text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path id="hamburgerIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+
+      <!-- Menu -->
+      <ul class="hidden md:flex items-center gap-10 text-white text-sm tracking-wide">
+        <li class="nav-link bg-white/20 px-5 py-2 rounded-sm cursor-pointer" data-section="home"><a class="block"
+            href="#home">HOME</a></li>
+        <li class="nav-link cursor-pointer" data-section="plans"><a class="block" href="#plans">PLANS</a></li>
+        <li class="nav-link cursor-pointer" data-section="experiences"><a class="block"
+            href="#experiences">EXPERIENCES</a></li>
+        <li class="nav-link cursor-pointer" data-section="gallery"><a class="block" href="#gallery">GALLERY</a></li>
+        <li class="nav-link cursor-pointer" data-section="about"><a class="block" href="#about">ABOUT</a></li>
+        <li class="nav-link cursor-pointer" data-section="location"><a class="block" href="#location">LOCATION</a></li>
+        <li class="nav-link cursor-pointer" data-section="contact"><a class="block" href="#contact">CONTACT</a></li>
+      </ul>
+
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobileMenu"
+      class="absolute top-[100px] left-0 w-full bg-greenTheme hidden flex-col items-center py-6 border-t border-white/20 shadow-lg">
+      <ul class="flex flex-col gap-6 text-white text-[16px] tracking-wide text-center w-full">
+        <li class="mobile-nav-link" data-section="home"><a class="block w-full py-2 hover:bg-white/10"
+            href="#home">HOME</a></li>
+        <li class="mobile-nav-link" data-section="plans"><a class="block w-full py-2 hover:bg-white/10"
+            href="#plans">PLANS</a></li>
+        <li class="mobile-nav-link" data-section="experiences"><a class="block w-full py-2 hover:bg-white/10"
+            href="#experiences">EXPERIENCES</a></li>
+        <li class="mobile-nav-link" data-section="gallery"><a class="block w-full py-2 hover:bg-white/10"
+            href="#gallery">GALLERY</a></li>
+        <li class="mobile-nav-link" data-section="about"><a class="block w-full py-2 hover:bg-white/10"
+            href="#about">ABOUT</a></li>
+        <li class="mobile-nav-link" data-section="location"><a class="block w-full py-2 hover:bg-white/10"
+            href="#location">LOCATION</a></li>
+        <li class="mobile-nav-link" data-section="contact"><a class="block w-full py-2 hover:bg-white/10"
+            href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="relative h-[884px] flex items-start pt-[120px]">
+
+    <!-- Background Image -->
+    <img src="" desktop="./images/hero-final.svg" mobile="./images/mobile-hero.svg"
+      class="responsive-img absolute inset-0 w-full h-full object-cover object-right" alt="hero" loading="eager">
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 w-full h-full bg-[#00000033]"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 px-6 md:px-[80px] text-white max-w-3xl">
+
+      <h1 class="font-['Bodoni_72','Bodoni_MT',Bodoni,serif] italic text-4xl md:text-[84px] md:leading-[1.05] mb-8">
+        Luxury Sea face <br>
+        Living Redefined
+      </h1>
+
+      <!-- Divider -->
+      <div class="w-[280px] h-[2px] bg-white mb-10"></div>
+
+      <!-- Details -->
+      <div class="space-y-8 text-xl md:text-[40px] md:leading-[1.3] font-medium">
+
+        <p><span class="font-bold">3 & 4 BHK</span> <br> Sea Facing Apartments</p>
+
+        <p><span class="font-bold">INR 4.80 CR*</span> <br> Onwards</p>
+
+        <p class="mt-4">
+          <span class="font-semibold">BANDRA BAY</span><br>
+          Location
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CTA BAR ================= -->
+  <section class="bg-gray-100 py-6 px-4 md:px-[80px]">
+
+    <div class="flex flex-row justify-center items-center gap-2 md:gap-6 w-full max-w-4xl mx-auto">
+
+      <button class="open-modal bg-[#33564F] text-white flex-1 md:flex-none md:w-[333px] h-[35px] md:h-[70px] rounded-full text-[10px] sm:text-[11px] md:text-[16px] tracking-wide whitespace-nowrap px-1 md:px-0">
+        DOWNLOAD BROCHURE
+      </button>
+
+      <button class="open-modal bg-[#33564F] text-white flex-1 md:flex-none md:w-[333px] h-[35px] md:h-[70px] rounded-full text-[10px] sm:text-[11px] md:text-[16px] tracking-wide whitespace-nowrap px-1 md:px-0">
+        BOOK A PRIVATE MEETING
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= ABOUT / LUXURY SECTION ================= -->
+  <section class="relative h-[800px] py-24 flex items-center justify-center px-6 md:px-[80px] text-center">
+
+    <!-- Background Image -->
+    <img src="./images/Project Image.svg" class="absolute inset-0 w-full h-full object-cover" alt="background">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 w-full h-full bg-gradient-to-b from-[#33564F]/20 to-[#33564F]/80"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-[1240px] text-white flex flex-col items-center">
+
+      <!-- Heading -->
+      <h2
+        class="font-['Bodoni_72','Bodoni_MT',Bodoni,serif] text-3xl md:text-[84px] mb-6 leading-tight md:leading-[1.1] whitespace-nowrap">
+        Where Luxury Meets the Sea
+      </h2>
+
+      <!-- Description -->
+      <p class="text-sm md:text-[24px] leading-relaxed opacity-90 mb-10 md:leading-[1.5]">
+        Gurukrupa Realcon's newest project in Bandra Bay, Mumbai, epitomizes luxury and exclusivity with its "One-
+        Of-One" philosophy—offering 3 and 4 bed deck residences in a striking 30-storey, Manhattan-inspired tower
+        designed by European architecture. The development stands out with features like double-heighted lobbies,
+        10.5 ft. ceilings, large running decks for every home, and curated amenities including a 7,500 sq. ft. rooftop
+        infinity pool, state-of-the-art gym, banquet hall, and 24/7 concierge service. Situated at a coveted address
+        that ensures excellent connectivity via the Coastal Road, Sea Link, and Metro Line-2A, residents enjoy
+        proximity to Mumbai’s best dining, schools, healthcare, and business hubs. The project promises not just
+        refined living but significant investment growth, capitalizing on government-driven infrastructure initiatives
+        and Bandra Bay’s emergence as an elite residential destination.
+      </p>
+
+      <!-- Button -->
+      <button
+        class="open-modal bg-[#33564F] w-[200px] md:w-[260px] h-[35px] md:h-[70px] rounded-full text-[12px] md:text-[16px] tracking-wide hover:opacity-90 transition flex items-center justify-center">
+        ENQUIRE NOW
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CONNECTIVITY SECTION ================= -->
+  <section id="location" class="bg-gray-100 py-20 px-6 md:px-[80px]">
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- LEFT CONTENT -->
+      <div>
+
+        <!-- Heading -->
+        <h2
+          class="font-['Bodoni_72','Bodoni_MT',Bodoni,serif] text-3xl md:text-[40px] font-bold mb-6 leading-snug text-gray-900">
+          Prime Bandra Bay Address with Seamless Citywide Connectivity
+        </h2>
+
+        <!-- Paragraph -->
+        <p class="text-gray-600 leading-relaxed mb-8 md:text-[24px]">
+          The project enjoys a prime Bandra Bay, Bandra West location with quick access to Bandra-Worli Sea Link,
+          Coastal Road, Metro connectivity and Western Express Highway, ensuring fast commute across Mumbai. It sits
+          close to Bandstand and Carter Road promenades, top schools, hospitals, dining and BKC, making it a highly
+          convenient and aspirational address for both lifestyle and investment.
+        </p>
+
+        <!-- Button -->
+        <button
+          class="open-modal bg-[#33564F] text-white px-6 md:px-10 h-[35px] md:h-[70px] inline-flex items-center justify-center rounded-full text-[12px] md:text-[16px] tracking-wide hover:opacity-90 transition">
+          GET MORE INFO
+        </button>
+
+      </div>
+
+
+      <!-- RIGHT IMAGE -->
+      <div class="flex justify-start md:justify-end">
+
+        <div class="relative w-full max-w-md">
+
+          <img src="" desktop="./images/Reclamation_03 1.svg" mobile="./images/mobile-prime.svg"
+            class="responsive-img w-full object-cover rounded" alt="building">
+
+
+          <div class="absolute inset-0 bg-gradient-to-t from-[#33564F]/40 to-transparent rounded pointer-events-none">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= RESIDENCES SECTION ================= -->
+  <section id="plans" class="bg-gray-100 py-20 px-6 md:px-[80px]">
+
+    <!-- Top Content -->
+    <div class="max-w-5xl mb-12">
+
+      <h2 class="font-['Bodoni_72','Bodoni_MT',Bodoni,serif] text-3xl md:text-[40px] font-bold text-gray-900 mb-4">
+        An Ensemble of Stunning Residences
+      </h2>
+
+      <p class="text-gray-600 leading-relaxed mb-6 md:text-[24px] md:leading-[1.4]">
+        The project offers large-format 3 and 4 bed deck residences in a premium high-rise tower, with generous
+        floor-to-ceiling height, spacious running decks, and low-density planning with limited apartments per floor,
+        designed to maximize light, ventilation, privacy, and views for luxury family living in Bandra Bay.
+      </p>
+
+      <button
+        class="open-modal bg-[#33564F] text-white px-6 md:px-10 h-[35px] md:h-[70px] inline-flex items-center justify-center rounded-full text-[12px] md:text-[16px] tracking-wide hover:opacity-90 transition">
+        GET MORE INFO
+      </button>
+
+    </div>
+
+
+    <!-- Desktop Image Grid (hidden on mobile) -->
+    <div class="hidden md:flex flex-wrap lg:flex-nowrap justify-start gap-1 md:gap-[4px]">
+
+      <!-- CARD 1 -->
+      <div class="md:w-[269px] flex flex-col relative group">
+        <div class="relative w-full h-[596px]">
+          <img src="./images/img 1.svg" class="w-full h-full object-cover" alt="residence">
+          <div class="absolute inset-0 bg-gradient-to-b from-[#33564F]/20 to-[#33564F]/20 pointer-events-none"></div>
+        </div>
+        <div
+          class="w-full bg-greenTheme text-white text-center py-4 flex items-center justify-center text-[16px] font-medium">
+          3 BHK
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="md:w-[269px] flex flex-col relative group">
+        <div class="relative w-full h-[596px]">
+          <img src="./images/img 2.svg" class="w-full h-full object-cover" alt="residence">
+          <div class="absolute inset-0 bg-gradient-to-b from-[#33564F]/20 to-[#33564F]/20 pointer-events-none"></div>
+        </div>
+        <div
+          class="w-full bg-greenTheme text-white text-center py-4 flex items-center justify-center text-[16px] font-medium">
+          3 BHK
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="md:w-[269px] flex flex-col relative group">
+        <div class="relative w-full h-[596px]">
+          <img src="./images/img 3.svg" class="w-full h-full object-cover" alt="residence">
+          <div class="absolute inset-0 bg-gradient-to-b from-[#33564F]/20 to-[#33564F]/20 pointer-events-none"></div>
+        </div>
+        <div
+          class="w-full bg-greenTheme text-white text-center py-4 flex items-center justify-center text-[16px] font-medium">
+          4 BHK
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="md:w-[465px] flex flex-col relative group">
+        <div class="relative w-full h-[596px]">
+          <img src="./images/img 4.svg" class="w-full h-full object-cover" alt="residence">
+          <div class="absolute inset-0 bg-gradient-to-b from-[#33564F]/20 to-[#33564F]/20 pointer-events-none"></div>
+        </div>
+        <div
+          class="w-full bg-greenTheme text-white text-center py-4 px-2 flex items-center justify-center text-[15px] sm:text-[16px] font-medium leading-tight">
+          4 BHK ≈1561 sq. ft.–1811 sq. ft
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mobile Single Image (hidden on desktop) -->
+    <div class="md:hidden flex flex-col">
+      <div class="relative w-full">
+        <img src="./images/mobile-rectangle.svg" class="w-full h-[500px] object-cover" alt="residence">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#33564F]/20 to-[#33564F]/20 pointer-events-none"></div>
+      </div>
+      <div class="flex w-full">
+        <div
+          class="flex-1 bg-greenTheme text-white text-center py-4 flex items-center justify-center text-[16px] font-medium">
+          3 BHK
+        </div>
+        <div
+          class="flex-1 bg-[#808080] text-white text-center py-4 flex items-center justify-center text-[16px] font-medium">
+          4 BHK
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= AMENITIES SECTION ================= -->
+  <section id="experiences" class="bg-gray-100 py-20 px-6 md:px-[80px]">
+
+    <!-- Mobile Heading (above image) -->
+    <h2 class="md:hidden font-['Bodoni_72','Bodoni_MT',Bodoni,serif] text-3xl font-bold text-gray-900 mb-6">
+      Global Lifestyle Experience
+    </h2>
+
+    <div class="flex flex-col xl:flex-row gap-12 items-center justify-between">
+
+      <!-- LEFT IMAGE -->
+      <div class="flex-shrink-0 w-full xl:w-[687px]">
+        <img src="./images/Lifestyle Image.svg" alt="amenities" class="w-full h-[611px] object-cover">
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="flex-grow w-full">
+
+        <!-- Heading -->
+        <h2
+          class="hidden md:block font-['Bodoni_72','Bodoni_MT',Bodoni,serif] text-3xl md:text-[40px] font-bold text-gray-900 mb-8">
+          Global Lifestyle Experience
+        </h2>
+
+        <!-- Feature List -->
+        <div class="text-gray-700 md:text-[24px] space-y-4">
+
+          <div class="border-b border-black pb-3">Rooftop Sky Infinity Pool</div>
+          <div class="border-b border-black pb-3">Kloud9 – 7,500 sq. ft. rooftop sanctuary</div>
+          <div class="border-b border-black pb-3">Eden – 18,000 sq. ft. elevated podium deck</div>
+          <div class="border-b border-black pb-3">State-of-the-Art Fitness Centre</div>
+          <div class="border-b border-black pb-3">1000 sq. ft. Banquet Lounge</div>
+          <div class="border-b border-black pb-3">149 sq. ft. Private Running Deck in each residence</div>
+          <div class="border-b border-black pb-3">Manhattan-Inspired Double-Height Entrance Lobby</div>
+          <div class="border-b border-black pb-3">Surface Car Parking</div>
+          <div class="border-b border-black pb-3">7 Elevators Serving 7 Apartments Per Floor</div>
+          <div class="border-b border-black pb-3">24/7 Concierge & Security</div>
+          <div class="border-b border-black pb-3">10.5 ft. Floor-to-Ceiling Height</div>
+          <div class="border-b border-black pb-3">30-Storey Signature Tower</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= GALLERY SECTION ================= -->
+  <section id="gallery" class="bg-gray-100 py-20 px-6 md:px-[80px]">
+
+    <!-- Heading -->
+    <h2
+      class="font-['Bodoni_72','Bodoni_MT',Bodoni,serif] text-3xl md:text-[40px] font-bold text-gray-900 mb-10 text-center">
+      Gallery
+    </h2>
+
+    <!-- Slider Container -->
+    <div class="relative w-full h-[483px] flex items-center justify-center overflow-hidden">
+
+      <!-- Images Wrapper -->
+      <div id="slides" class="flex h-full absolute left-1/2 transition-transform duration-700 ease-in-out"
+        style="transform: translateX(-1200px);">
+
+        <!-- Slide 0 -->
+        <div class="slide flex-shrink-0 w-[800px] h-full relative cursor-pointer group">
+          <img src="" desktop="./images/gallery1.svg" mobile="./images/mobile-gallery1.svg"
+            class="responsive-img w-full h-full object-cover" alt="gallery">
+
+          <div class="overlay absolute inset-0 bg-black/60 transition-opacity duration-700 opacity-60"></div>
+        </div>
+
+        <!-- Slide 1 (Middle) -->
+        <div class="slide flex-shrink-0 w-[800px] h-full relative cursor-pointer group">
+          <img src="" desktop="./images/gallery2.svg" mobile="./images/mobile-gallery2.svg"
+            class="responsive-img w-full h-full object-cover" alt="gallery">
+          <div class="overlay absolute inset-0 bg-black/60 transition-opacity duration-700 opacity-0"></div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide flex-shrink-0 w-[800px] h-full relative cursor-pointer group">
+          <img src="" desktop="./images/gallery 3.svg" mobile="./images/mobile-gallery3.svg"
+            class="responsive-img w-full h-full object-cover" alt="gallery">
+          <div class="overlay absolute inset-0 bg-black/60 transition-opacity duration-700 opacity-60"></div>
+        </div>
+
+      </div>
+
+      <!-- ARROWS CONTAINER (fixed to center) -->
+      <div class="absolute inset-0 max-w-[1240px] mx-auto pointer-events-none">
+
+        <!-- LEFT ARROW -->
+        <button id="prev"
+          class="absolute left-4 lg:left-[calc(50%-400px-100px)] top-1/2 -translate-y-1/2 text-white pointer-events-auto hover:scale-110 transition group">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            class="w-12 h-12 drop-shadow-lg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </button>
+
+        <!-- RIGHT ARROW -->
+        <button id="next"
+          class="absolute right-4 lg:right-[calc(50%-400px-100px)] top-1/2 -translate-y-1/2 text-white pointer-events-auto hover:scale-110 transition group">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            class="w-12 h-12 drop-shadow-lg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= INVEST SECTION ================= -->
+  <section class="bg-gray-100 py-20 px-6 md:px-[80px] text-center">
+
+    <div class="max-w-5xl mx-auto flex flex-col items-center">
+
+      <!-- Heading -->
+      <h2
+        class="font-['Bodoni_72','Bodoni_MT',Bodoni,serif] text-[22px] md:text-[40px] font-bold text-gray-900 mb-6 whitespace-nowrap">
+        Why Invest In Gurukrupa Realcon
+      </h2>
+
+      <!-- Description -->
+      <p class="text-gray-600 leading-relaxed mb-10 md:text-[24px] md:leading-[1.5]">
+        This project is a strong investment because it combines a rare, high-luxury product with a prime Bandra Bay
+        location that is set to benefit from major infrastructure upgrades and limited premium supply, driving strong
+        appreciation potential. The exclusive 3 & 4 bed deck residences, iconic tower design, and rooftop lifestyle
+        amenities enhance end-user demand and rental appeal, while the developer’s established track record and multiple
+        landmark projects add credibility and confidence for long-term investors and end users alike.
+      </p>
+
+      <!-- Button -->
+      <button
+        class="open-modal bg-[#33564F] text-white px-6 md:px-10 h-[35px] md:h-[70px] inline-flex items-center justify-center rounded-full text-[12px] md:text-[16px] tracking-wide hover:opacity-90 transition">
+        ENQUIRE NOW
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+
+
+  <!-- ================= ABOUT DEVELOPER ================= -->
+  <section id="about" class="bg-gray-100 py-20 px-6 md:px-[80px] text-center">
+
+    <div class="max-w-5xl mx-auto flex flex-col items-center text-center">
+
+      <!-- Heading -->
+      <h2 class="font-['Bodoni_72','Bodoni_MT',Bodoni,serif] text-3xl md:text-[40px] font-bold text-gray-900 mb-6">
+        About the Developer
+      </h2>
+
+      <!-- Logo -->
+      <div class="flex justify-center mb-6">
+        <img src="./images/about icon.svg" alt="developer logo" class="w-[270px] h-[180px] object-contain">
+      </div>
+
+      <!-- Description -->
+      <p class="text-gray-600 leading-relaxed mb-12 md:text-[24px] md:leading-[1.5]">
+        Gurukrupa Realcon defines standards rather than following them, building a legacy shaped by vision, precision,
+        and pursuit of excellence. With over 3,000 happy families, 25 landmark developments across Bandra, Oshiwara, and
+        Mumbai, and more than 20 lakh sq. ft. delivered, the developer is known for timely project completion and
+        superior craftsmanship. Currently, 9+ projects are nearing delivery, reflecting their commitment to quality and
+        innovation, making Gurukrupa Realcon a trusted name in luxury real estate.
+      </p>
+
+      <!-- Image Grid -->
+      <div class="flex justify-center gap-2 md:gap-6 mb-8 mt-4">
+
+        <div class="relative flex-1 max-w-[269px] h-[300px] md:h-[596px]">
+          <img src="" desktop="./images/about1.svg" mobile="./images/mobile-frame1.svg"
+            class="responsive-img w-full h-full object-cover rounded" alt="about">
+          <div class="absolute inset-0 bg-[#33564F]/20 pointer-events-none rounded"></div>
+        </div>
+
+        <div class="relative flex-1 max-w-[269px] h-[300px] md:h-[596px]">
+          <img src="" desktop="./images/about2.svg" mobile="./images/mobile-frame2.svg"
+            class="responsive-img w-full h-full object-cover rounded" alt="about">
+          <div class="absolute inset-0 bg-[#33564F]/20 pointer-events-none rounded"></div>
+        </div>
+
+        <div class="relative flex-1 max-w-[269px] h-[300px] md:h-[596px]">
+          <img src="" desktop="./images/about3.svg" mobile="./images/mobile-frame3.svg"
+            class="responsive-img w-full h-full object-cover rounded" alt="about">
+          <div class="absolute inset-0 bg-[#33564F]/20 pointer-events-none rounded"></div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Line -->
+      <p class="text-gray-500 text-sm italic">
+        This is more than construction — <br>
+        This is craftsmanship with a purpose.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= LOCATION SECTION ================= -->
+  <section class="bg-gray-100 py-20 px-6 md:px-[80px]">
+
+    <!-- Headings -->
+    <div class="w-full max-w-[1440px] mx-auto text-center mb-12 flex flex-col items-center">
+      <h2 class="font-['Bodoni_72','Bodoni_MT',Bodoni,serif] text-3xl md:text-[40px] font-bold text-gray-900 mb-6">
+        Location
+      </h2>
+      <h3 class="font-['Bodoni_72','Bodoni_MT',Bodoni,serif] text-3xl md:text-[40px] font-bold text-gray-900 mb-4">
+        Where Connectivity Isn’t Just Access
+      </h3>
+      <p class="font-bold text-gray-800 tracking-wider uppercase mb-4 text-[16px] md:text-[18px]">
+        IT'S AN ADVANTAGE OF POWER.
+      </p>
+      <p class="text-gray-600 md:text-[20px] xl:text-[22px] md:whitespace-nowrap">
+        With multiple infrastructural corridors converging here, this address doesn't only offer convenience — it offers
+        control.
+      </p>
+    </div>
+
+    <!-- Accordion Wrapper -->
+    <div class="max-w-4xl mx-auto space-y-4 font-medium">
+
+      <!-- Item 1 -->
+      <div class="border border-[#33564F] bg-transparent">
+        <button
+          class="w-full flex justify-between items-center p-5 text-left md:text-[20px] text-gray-900 font-semibold focus:outline-none"
+          onclick="toggleAccordion('acc1')">
+          <span>Key Access Points</span>
+          <svg id="icon-acc1" xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 transform transition-transform duration-300 rotate-180" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="content-acc1" class="p-5 pt-0 text-gray-700 md:text-[20px] flex justify-center">
+          <div class="text-left space-y-2">
+            <p>Western Express Highway — 8 mins</p>
+            <p>Metro Line 2A — 5 mins</p>
+            <p>Coastal Road Extension & Sea Link — 5 mins</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="border border-[#33564F] bg-transparent">
+        <button
+          class="w-full flex justify-between items-center p-5 text-left md:text-[20px] text-gray-900 font-semibold focus:outline-none"
+          onclick="toggleAccordion('acc2')">
+          <span>Education</span>
+          <svg id="icon-acc2" xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="content-acc2" class="p-5 pt-0 text-gray-700 md:text-[20px] flex justify-center hidden">
+          <div class="text-left space-y-2">
+            <p>Top Schools & Colleges nearby</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="border border-[#33564F] bg-transparent">
+        <button
+          class="w-full flex justify-between items-center p-5 text-left md:text-[20px] text-gray-900 font-semibold focus:outline-none"
+          onclick="toggleAccordion('acc3')">
+          <span>Healthcare</span>
+          <svg id="icon-acc3" xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="content-acc3" class="p-5 pt-0 text-gray-700 md:text-[20px] flex justify-center hidden">
+          <div class="text-left space-y-2">
+            <p>Multi-specialty Hospitals within 10 mins</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="border border-[#33564F] bg-transparent">
+        <button
+          class="w-full flex justify-between items-center p-5 text-left md:text-[20px] text-gray-900 font-semibold focus:outline-none"
+          onclick="toggleAccordion('acc4')">
+          <span>Luxury Dining & Lifestyle</span>
+          <svg id="icon-acc4" xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="content-acc4" class="p-5 pt-0 text-gray-700 md:text-[20px] flex justify-center hidden">
+          <div class="text-left space-y-2">
+            <p>Premium Cafes and Restaurants nearby</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="border border-[#33564F] bg-transparent">
+        <button
+          class="w-full flex justify-between items-center p-5 text-left md:text-[20px] text-gray-900 font-semibold focus:outline-none"
+          onclick="toggleAccordion('acc5')">
+          <span>Landmarks</span>
+          <svg id="icon-acc5" xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="content-acc5" class="p-5 pt-0 text-gray-700 md:text-[20px] flex justify-center hidden">
+          <div class="text-left space-y-2">
+            <p>Bandra Sea Link and surrounding icons</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section id="contact" class="relative py-24 flex items-center justify-center px-6 md:px-[80px]">
+
+    <!-- Background Image -->
+    <img src="./images/book.svg" class="absolute inset-0 w-full h-full object-cover" alt="contact">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#33564F]/40 to-[#33564F]/70"></div>
+
+    <!-- Content -->
+    <div
+      class="relative z-10 w-full max-w-5xl mx-auto text-left md:text-center flex flex-col items-start md:items-center text-white">
+
+      <!-- Heading -->
+      <h2
+        class="font-['Bodoni_72',_'Bodoni_MT',_Bodoni,_serif] font-semibold text-[22px] md:text-[72px] leading-[1.1] mb-2 uppercase tracking-wide whitespace-nowrap">
+        BOOK YOUR PRIVATE PREVIEW
+      </h2>
+
+      <p class="mb-10 text-[14px] md:text-[24px] opacity-90 max-w-md">
+        Experience the one-of-one lifestyle.
+      </p>
+
+      <!-- Form -->
+      <div id="contactForm" class="enq_form space-y-6 w-full text-left">
+
+        <input type="text" placeholder="Your Name*" required
+          class="name w-full px-6 h-[70px] text-gray-900 bg-white outline-none rounded">
+
+        <input type="email" placeholder="Your Email*" required
+          class="email w-full px-6 h-[70px] text-gray-900 bg-white outline-none rounded">
+
+        <!-- Phone Input -->
+        <div class="phone-open-div flex items-center h-[70px] relative bg-white rounded">
+          <div class="relative flex items-center h-full px-4 md:px-6 border-r border-gray-200 cursor-pointer gap-2"
+            id="country-selector">
+            <img id="selected-flag" src="https://flagcdn.com/w40/in.png" class="w-6 h-4 object-cover rounded-sm"
+              alt="flag">
+            <span id="selected-code" class="text-gray-800 text-[14px] md:text-[18px] tracking-wide">+91</span>
+            <span class="text-gray-500 text-[10px]">▼</span>
+
+            <!-- Dropdown -->
+            <ul id="country-dropdown"
+              class="absolute top-[75px] left-0 w-[260px] max-h-[300px] overflow-y-auto bg-white rounded shadow-xl text-gray-800 z-[99] hidden border border-gray-100 text-left text-[15px]">
+              <li class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition flag-option cursor-pointer"
+                data-code="+91" data-flag="https://flagcdn.com/w40/in.png">
+                <img src="https://flagcdn.com/w40/in.png" class="w-6 h-4 object-cover rounded-sm"> <span>India
+                  (+91)</span>
+              </li>
+              <li class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition flag-option cursor-pointer"
+                data-code="+1" data-flag="https://flagcdn.com/w40/us.png">
+                <img src="https://flagcdn.com/w40/us.png" class="w-6 h-4 object-cover rounded-sm"> <span>USA (+1)</span>
+              </li>
+              <li class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition flag-option cursor-pointer"
+                data-code="+44" data-flag="https://flagcdn.com/w40/gb.png">
+                <img src="https://flagcdn.com/w40/gb.png" class="w-6 h-4 object-cover rounded-sm"> <span>UK (+44)</span>
+              </li>
+              <li class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition flag-option cursor-pointer"
+                data-code="+61" data-flag="https://flagcdn.com/w40/au.png">
+                <img src="https://flagcdn.com/w40/au.png" class="w-6 h-4 object-cover rounded-sm"> <span>Australia
+                  (+61)</span>
+              </li>
+              <li class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition flag-option cursor-pointer"
+                data-code="+971" data-flag="https://flagcdn.com/w40/ae.png">
+                <img src="https://flagcdn.com/w40/ae.png" class="w-6 h-4 object-cover rounded-sm"> <span>UAE
+                  (+971)</span>
+              </li>
+              <li class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition flag-option cursor-pointer"
+                data-code="+65" data-flag="https://flagcdn.com/w40/sg.png">
+                <img src="https://flagcdn.com/w40/sg.png" class="w-6 h-4 object-cover rounded-sm"> <span>Singapore
+                  (+65)</span>
+              </li>
+              <li class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition flag-option cursor-pointer"
+                data-code="+966" data-flag="https://flagcdn.com/w40/sa.png">
+                <img src="https://flagcdn.com/w40/sa.png" class="w-6 h-4 object-cover rounded-sm"> <span>Saudi Arabia
+                  (+966)</span>
+              </li>
+              <li class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition flag-option cursor-pointer"
+                data-code="+974" data-flag="https://flagcdn.com/w40/qa.png">
+                <img src="https://flagcdn.com/w40/qa.png" class="w-6 h-4 object-cover rounded-sm"> <span>Qatar
+                  (+974)</span>
+              </li>
+              <li class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition flag-option cursor-pointer"
+                data-code="+968" data-flag="https://flagcdn.com/w40/om.png">
+                <img src="https://flagcdn.com/w40/om.png" class="w-6 h-4 object-cover rounded-sm"> <span>Oman
+                  (+968)</span>
+              </li>
+              <li class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition flag-option cursor-pointer"
+                data-code="+1" data-flag="https://flagcdn.com/w40/ca.png">
+                <img src="https://flagcdn.com/w40/ca.png" class="w-6 h-4 object-cover rounded-sm"> <span>Canada
+                  (+1)</span>
+              </li>
+              <li class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition flag-option cursor-pointer"
+                data-code="+49" data-flag="https://flagcdn.com/w40/de.png">
+                <img src="https://flagcdn.com/w40/de.png" class="w-6 h-4 object-cover rounded-sm"> <span>Germany
+                  (+49)</span>
+              </li>
+              <li class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition flag-option cursor-pointer"
+                data-code="+81" data-flag="https://flagcdn.com/w40/jp.png">
+                <img src="https://flagcdn.com/w40/jp.png" class="w-6 h-4 object-cover rounded-sm"> <span>Japan
+                  (+81)</span>
+              </li>
+            </ul>
+          </div>
+
+          <input type="tel" placeholder="Your Phone Number*" required
+            class="phone w-full px-4 md:px-6 h-full text-gray-900 bg-transparent outline-none text-[14px] md:text-[18px]">
+        </div>
+
+        <!-- Button -->
+        <div class="flex justify-center mt-8">
+          <button type="button"
+            class="submit_button bg-[#33564F] text-white px-8 md:px-12 h-[35px] md:h-[70px] inline-flex items-center justify-center rounded-full text-[12px] md:text-[16px] tracking-wide hover:opacity-90 transition font-medium">
+            ENQUIRE NOW
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="relative text-white text-left py-20 px-6 md:px-[80px]">
+
+    <!-- Background Image -->
+    <img src="./images/last page bg.svg" class="absolute inset-0 w-full h-full object-cover" alt="footer">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 w-full h-full bg-black/50"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 w-full">
+
+      <!-- Top Logos -->
+      <div class="flex flex-row justify-between items-center w-full mb-12 gap-4 md:gap-8">
+
+        <img src="" desktop="./images/last1.svg" mobile="./images/mobile-footer1.svg"
+          class="responsive-img w-[140px] md:w-[406px] h-[60px] md:h-[120px] object-contain" alt="logo1">
+
+        <img src="" desktop="./images/last2.svg" mobile="./images/mobile-footer2.svg"
+          class="responsive-img w-[130px] md:w-[372px] h-[60px] md:h-[120px] object-contain" alt="logo2">
+
+        <img src="" desktop="./images/last3.svg" mobile="./images/mobile-footer3.svg"
+          class="responsive-img w-[80px] md:w-[215px] h-[60px] md:h-[120px] object-contain md:mr-[180px]" alt="logo3">
+
+      </div>
+
+      <!-- Disclaimer -->
+      <h3 class="text-lg tracking-wide mb-4 text-center">DISCLAIMER</h3>
+      <div class="w-16 h-[2px] bg-white mb-6 mx-auto"></div>
+
+      <!-- Address -->
+      <p class="text-center mb-6 leading-relaxed text-[16px] md:text-[24px]">
+        THE ADDRESS : One-Of-One, 1, A.K. Vaidya Marg, Bandra (W), Mumbai 400050 <br>
+        MahaRERA No. P51800078233
+      </p>
+
+      <!-- Contact -->
+      <p class="text-center mb-6 text-[16px] md:text-[24px]">
+        Call: +91 74004 42942 <br>
+        Email: sales@gurukrupagroup.in <br>
+        Website: gurukruparealcon.com
+      </p>
+
+      <!-- Divider -->
+      <div class="border-t border-white/50 my-8"></div>
+
+      <!-- Bottom -->
+      <p class="text-center text-[16px] md:text-[24px]">
+        Website by <span class="underline">PropStory</span>
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= STICKY BOTTOM BAR ================= -->
+  <div id="stickyBar"
+    class="fixed bottom-0 left-0 w-full bg-white shadow-[0_-4px_20px_rgba(0,0,0,0.1)] z-[90] flex items-center justify-between px-3 sm:px-6 md:px-[80px] py-2 md:py-4 transition-transform duration-500 translate-y-full">
+
+    <!-- Left: Logo & Text -->
+    <div class="flex items-center gap-4 md:gap-8 min-w-0 pr-2">
+      <img src="images/logo7.svg" alt="logo" class="h-10 md:h-14 w-auto object-contain hidden md:block"
+        style="filter: brightness(0) saturate(100%) invert(48%) sepia(47%) saturate(583%) hue-rotate(20deg) brightness(97%) contrast(93%);">
+      <div class="text-gray-800 text-[10px] sm:text-[12px] md:text-[18px] font-medium leading-tight md:leading-snug">
+        <p class="whitespace-nowrap">Price is 4.80 cr*</p>
+        <p class="truncate">Project name: Codeword One-of-One.</p>
+      </div>
+    </div>
+
+    <!-- Right: Buttons -->
+    <div class="flex items-center gap-2 md:gap-4 flex-shrink-0">
+      <button
+        class="open-modal bg-[#33564F] text-white px-4 md:px-8 py-2 md:py-3 rounded-full text-[10px] sm:text-[12px] md:text-[14px] font-medium tracking-wide hover:opacity-90 transition hidden md:block whitespace-nowrap">
+        REGISTER INTEREST
+      </button>
+      <button
+        class="open-modal bg-[#33564F] text-white px-4 md:px-8 py-2 md:py-3 rounded-full text-[10px] sm:text-[12px] md:text-[14px] font-medium tracking-wide hover:opacity-90 transition whitespace-nowrap">
+        DOWNLOAD BROCHURE
+      </button>
+    </div>
+
+  </div>
+
+
+  <!-- ================= MODAL POPUP ================= -->
+  <div id="formModal" class="fixed inset-0 z-[999] hidden items-center justify-center">
+    <!-- Backdrop -->
+    <div id="modalBackdrop" class="absolute inset-0 bg-black/50"></div>
+
+    <!-- Modal Content -->
+    <div class="relative bg-white rounded-lg w-[90%] max-w-[580px] mx-auto p-8 md:p-12 z-10">
+
+      <!-- Close Button -->
+      <button id="closeModal"
+        class="absolute top-4 right-5 text-gray-500 hover:text-gray-800 text-2xl font-light transition">
+        ✕
+      </button>
+
+      <!-- Heading -->
+      <h2
+        class="font-['Bodoni_72','Bodoni_MT',Bodoni,serif] font-semibold text-[22px] md:text-[32px] leading-[1.1] mb-2 uppercase tracking-wide text-center text-gray-900">
+        BOOK YOUR PRIVATE PREVIEW
+      </h2>
+      <p class="text-center text-gray-600 text-[14px] md:text-[16px] mb-8 italic">
+        Experience the one-of-one lifestyle.
+      </p>
+
+      <!-- Form -->
+      <div id="modalForm" class="enq_form space-y-5 w-full text-left">
+        <input type="text" placeholder="Your Name*" required
+          class="name w-full px-6 h-[55px] md:h-[60px] text-gray-900 bg-gray-50 border border-gray-200 outline-none rounded text-[15px]">
+
+        <input type="email" placeholder="Your Email*" required
+          class="email w-full px-6 h-[55px] md:h-[60px] text-gray-900 bg-gray-50 border border-gray-200 outline-none rounded text-[15px]">
+
+        <!-- Phone Input -->
+        <div class="phone-open-div flex items-center h-[55px] md:h-[60px] relative bg-gray-50 border border-gray-200 rounded">
+          <div class="relative flex items-center h-full px-4 border-r border-gray-200 cursor-pointer gap-2"
+            id="modal-country-selector">
+            <img id="modal-selected-flag" src="https://flagcdn.com/w40/in.png" class="w-6 h-4 object-cover rounded-sm"
+              alt="flag">
+            <span id="modal-selected-code" class="text-gray-800 text-[14px] tracking-wide">+91</span>
+            <span class="text-gray-500 text-[10px]">▼</span>
+
+            <!-- Dropdown -->
+            <ul id="modal-country-dropdown"
+              class="absolute top-[60px] left-0 w-[260px] max-h-[250px] overflow-y-auto bg-white rounded shadow-xl text-gray-800 z-[99] hidden border border-gray-100 text-left text-[15px]">
+              <li
+                class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition modal-flag-option cursor-pointer"
+                data-code="+91" data-flag="https://flagcdn.com/w40/in.png">
+                <img src="https://flagcdn.com/w40/in.png" class="w-6 h-4 object-cover rounded-sm"> <span>India
+                  (+91)</span>
+              </li>
+              <li
+                class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition modal-flag-option cursor-pointer"
+                data-code="+1" data-flag="https://flagcdn.com/w40/us.png">
+                <img src="https://flagcdn.com/w40/us.png" class="w-6 h-4 object-cover rounded-sm"> <span>USA (+1)</span>
+              </li>
+              <li
+                class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition modal-flag-option cursor-pointer"
+                data-code="+44" data-flag="https://flagcdn.com/w40/gb.png">
+                <img src="https://flagcdn.com/w40/gb.png" class="w-6 h-4 object-cover rounded-sm"> <span>UK (+44)</span>
+              </li>
+              <li
+                class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition modal-flag-option cursor-pointer"
+                data-code="+61" data-flag="https://flagcdn.com/w40/au.png">
+                <img src="https://flagcdn.com/w40/au.png" class="w-6 h-4 object-cover rounded-sm"> <span>Australia
+                  (+61)</span>
+              </li>
+              <li
+                class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition modal-flag-option cursor-pointer"
+                data-code="+971" data-flag="https://flagcdn.com/w40/ae.png">
+                <img src="https://flagcdn.com/w40/ae.png" class="w-6 h-4 object-cover rounded-sm"> <span>UAE
+                  (+971)</span>
+              </li>
+              <li
+                class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition modal-flag-option cursor-pointer"
+                data-code="+65" data-flag="https://flagcdn.com/w40/sg.png">
+                <img src="https://flagcdn.com/w40/sg.png" class="w-6 h-4 object-cover rounded-sm"> <span>Singapore
+                  (+65)</span>
+              </li>
+              <li
+                class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition modal-flag-option cursor-pointer"
+                data-code="+966" data-flag="https://flagcdn.com/w40/sa.png">
+                <img src="https://flagcdn.com/w40/sa.png" class="w-6 h-4 object-cover rounded-sm"> <span>Saudi Arabia
+                  (+966)</span>
+              </li>
+              <li
+                class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition modal-flag-option cursor-pointer"
+                data-code="+974" data-flag="https://flagcdn.com/w40/qa.png">
+                <img src="https://flagcdn.com/w40/qa.png" class="w-6 h-4 object-cover rounded-sm"> <span>Qatar
+                  (+974)</span>
+              </li>
+              <li
+                class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition modal-flag-option cursor-pointer"
+                data-code="+968" data-flag="https://flagcdn.com/w40/om.png">
+                <img src="https://flagcdn.com/w40/om.png" class="w-6 h-4 object-cover rounded-sm"> <span>Oman
+                  (+968)</span>
+              </li>
+              <li
+                class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition modal-flag-option cursor-pointer"
+                data-code="+1" data-flag="https://flagcdn.com/w40/ca.png">
+                <img src="https://flagcdn.com/w40/ca.png" class="w-6 h-4 object-cover rounded-sm"> <span>Canada
+                  (+1)</span>
+              </li>
+              <li
+                class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition modal-flag-option cursor-pointer"
+                data-code="+49" data-flag="https://flagcdn.com/w40/de.png">
+                <img src="https://flagcdn.com/w40/de.png" class="w-6 h-4 object-cover rounded-sm"> <span>Germany
+                  (+49)</span>
+              </li>
+              <li
+                class="px-5 py-3 hover:bg-gray-100 flex items-center gap-3 transition modal-flag-option cursor-pointer"
+                data-code="+81" data-flag="https://flagcdn.com/w40/jp.png">
+                <img src="https://flagcdn.com/w40/jp.png" class="w-6 h-4 object-cover rounded-sm"> <span>Japan
+                  (+81)</span>
+              </li>
+            </ul>
+          </div>
+
+          <input type="tel" placeholder="Your Phone Number*" required
+            class="phone w-full px-4 h-full text-gray-900 bg-transparent outline-none text-[15px]">
+        </div>
+
+        <!-- Button -->
+        <div class="flex justify-center mt-6">
+          <button type="button"
+            class="submit_button bg-[#33564F] text-white px-8 md:px-12 h-[35px] md:h-[60px] inline-flex items-center justify-center rounded-full text-[12px] md:text-[16px] tracking-wide hover:opacity-90 transition font-medium">
+            ENQUIRE NOW
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ================= JS ================= -->
+  <script>
+    // Navbar active state on scroll
+    const navLinks = document.querySelectorAll('.nav-link');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+    const sections = document.querySelectorAll('section[id]');
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburgerIcon = document.getElementById('hamburgerIcon');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        if (isHidden) {
+          mobileMenu.classList.remove('hidden');
+          mobileMenu.classList.add('flex');
+          // Change to X icon
+          hamburgerIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+        } else {
+          mobileMenu.classList.add('hidden');
+          mobileMenu.classList.remove('flex');
+          // Change back to hamburger icon
+          hamburgerIcon.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7');
+        }
+      });
+    }
+
+    // Close mobile menu on link click
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
+        hamburgerIcon.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7');
+      });
+    });
+
+    // Scroll spy - highlight active section
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('bg-white/20', 'px-5', 'py-2', 'rounded-sm');
+        if (link.getAttribute('data-section') === current) {
+          link.classList.add('bg-white/20', 'px-5', 'py-2', 'rounded-sm');
+        }
+      });
+    });
+
+    // Sticky Bottom Bar scroll visibility
+    const stickyBar = document.getElementById('stickyBar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 800) {
+        stickyBar.classList.remove('translate-y-full');
+      } else {
+        stickyBar.classList.add('translate-y-full');
+      }
+    });
+  </script>
+
+  <script>
+    const slidesContainer = document.getElementById("slides");
+    const slideElements = document.querySelectorAll(".slide");
+    const overlays = document.querySelectorAll(".slide .overlay");
+    const totalSlides = slideElements.length;
+
+    let currentIndex = 1; // Start with the middle image
+
+    document.getElementById("next").addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateGallery();
+    });
+
+    document.getElementById("prev").addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateGallery();
+    });
+
+    function updateGallery() {
+      // Move track so active slide is exactly centered
+      slidesContainer.style.transform = `translateX(calc(-400px - ${currentIndex * 800}px))`;
+
+      // Update overlays
+      overlays.forEach((overlay, i) => {
+        if (i === currentIndex) {
+          overlay.style.opacity = '0';
+        } else {
+          overlay.style.opacity = '0.6';
+        }
+      });
+    }
+  </script>
+
+
+  <script>
+    function toggleAccordion(id) {
+      const content = document.getElementById(`content-${id}`);
+      const icon = document.getElementById(`icon-${id}`);
+
+      // Close all other accordions when one is clicked
+      const allContents = document.querySelectorAll('[id^="content-acc"]');
+      const allIcons = document.querySelectorAll('[id^="icon-acc"]');
+
+      allContents.forEach((c) => {
+        if (c.id !== `content-${id}`) c.classList.add('hidden');
+      });
+      allIcons.forEach((i) => {
+        if (i.id !== `icon-${id}`) i.classList.remove('rotate-180');
+      });
+
+      // Toggle the currently clicked accordion
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+  </script>
+
+
+  <script>
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = form.querySelector("input[type='text']").value;
+      const email = form.querySelector("input[type='email']").value;
+      const phone = form.querySelector("input[type='tel']").value;
+
+      if (!name || !email || !phone) {
+        alert("Please fill all fields!");
+        return;
+      }
+
+      alert("Form Submitted Successfully!");
+
+      form.reset();
+    });
+  </script>
+
+  <script>
+    const countrySelector = document.getElementById('country-selector');
+    const countryDropdown = document.getElementById('country-dropdown');
+    const selectedFlag = document.getElementById('selected-flag');
+    const selectedCode = document.getElementById('selected-code');
+    const flagOptions = document.querySelectorAll('.flag-option');
+
+    // Toggle Dropdown
+    countrySelector.addEventListener('click', (e) => {
+      e.stopPropagation();
+      countryDropdown.classList.toggle('hidden');
+    });
+
+    // Close Dropdown on outside click
+    document.addEventListener('click', (e) => {
+      if (!countryDropdown.contains(e.target) && !countrySelector.contains(e.target)) {
+        countryDropdown.classList.add('hidden');
+      }
+    });
+
+    // Handle Option Selection
+    flagOptions.forEach(option => {
+      option.addEventListener('click', () => {
+        const flag = option.getAttribute('data-flag');
+        const code = option.getAttribute('data-code');
+
+        selectedFlag.src = flag;
+        selectedCode.textContent = code;
+
+        countryDropdown.classList.add('hidden');
+      });
+    });
+  </script>
+
+
+  <script>
+    function updateImages() {
+      const images = document.querySelectorAll(".responsive-img");
+
+      images.forEach(img => {
+        const desktopSrc = img.getAttribute("desktop");
+        const mobileSrc = img.getAttribute("mobile");
+
+        if (window.innerWidth <= 768) {
+          img.src = mobileSrc;
+        } else {
+          img.src = desktopSrc;
+        }
+      });
+    }
+
+    // Run on load
+    updateImages();
+
+    // Run on resize
+    window.addEventListener("resize", updateImages);
+  </script>
+
+
+  <!-- Modal JS -->
+  <script>
+    // Modal elements
+    const formModal = document.getElementById('formModal');
+    const closeModal = document.getElementById('closeModal');
+    const modalBackdrop = document.getElementById('modalBackdrop');
+
+    // Open modal on any .open-modal button click
+    document.querySelectorAll('.open-modal').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        formModal.classList.remove('hidden');
+        formModal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    // Close modal
+    function closeFormModal() {
+      formModal.classList.add('hidden');
+      formModal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    closeModal.addEventListener('click', closeFormModal);
+    modalBackdrop.addEventListener('click', closeFormModal);
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeFormModal();
+    });
+
+    // Modal country selector
+    const modalCountrySelector = document.getElementById('modal-country-selector');
+    const modalCountryDropdown = document.getElementById('modal-country-dropdown');
+    const modalSelectedFlag = document.getElementById('modal-selected-flag');
+    const modalSelectedCode = document.getElementById('modal-selected-code');
+    const modalFlagOptions = document.querySelectorAll('.modal-flag-option');
+
+    modalCountrySelector.addEventListener('click', (e) => {
+      e.stopPropagation();
+      modalCountryDropdown.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!modalCountryDropdown.contains(e.target) && !modalCountrySelector.contains(e.target)) {
+        modalCountryDropdown.classList.add('hidden');
+      }
+    });
+
+    modalFlagOptions.forEach(option => {
+      option.addEventListener('click', () => {
+        modalSelectedFlag.src = option.getAttribute('data-flag');
+        modalSelectedCode.textContent = option.getAttribute('data-code');
+        modalCountryDropdown.classList.add('hidden');
+      });
+    });
+
+    // Modal form submit
+    document.getElementById('modalForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Form Submitted Successfully!');
+      this.reset();
+      closeFormModal();
+    });
+  </script>
+
+
+  <script src="https://cdn.propstory.com/assets/vendor/intlTelInput/js/intlTelInput.js"></script>
+  <script src="https://cdn.propstory.com/assets/js/v1/common.js"></script>
+  <script src="https://cdn.propstory.com/assets/js/v1/form_submit.js"></script>
+  <script src="https://cdn.propstory.com/assets/js/v1/template_customization.js"></script>
+
+</body>
+
+</html>
